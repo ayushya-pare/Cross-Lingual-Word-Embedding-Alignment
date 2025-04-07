@@ -83,8 +83,6 @@ This will download pretrained English and Hindi word vectors (`.bin` format).
 
 ### 4. Run the Notebook
 Open the notebook in Jupyter or Google Colab and run each section step by step.
-- The notebook is written without functions, using loops and simple code.
-- It covers vocabulary filtering, Procrustes alignment, and evaluation.
 
 ### 5. Folder and Directory Structure
 Organize your working directory like this:

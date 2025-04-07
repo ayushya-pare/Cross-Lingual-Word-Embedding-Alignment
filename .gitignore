@@ -1,1 +1,2 @@
-/data/
+/data/fasttext_pretrained_vectors/*
+/data/muse_bilingual_dictionary/*
