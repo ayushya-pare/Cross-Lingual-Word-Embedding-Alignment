@@ -6,6 +6,8 @@ This is useful for things like translation and searching across languages.
 
 I tried two methods:
 
-A simple supervised method (with word pairs)
+- A simple supervised method (with word pairs)
 
-An unsupervised method (no dictionary)
+- An unsupervised method (no dictionary)
+
+
