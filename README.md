@@ -102,7 +102,7 @@ project_root/
 ├── Documentation/
 │   ├── documentation_and_results.pdf
 ├── notebooks/
-│   ├── cross_lingual_word_embeddings.ipynb
+│   ├── cross_lingual_words_embeddings_final.ipynb
 
 ```
 
