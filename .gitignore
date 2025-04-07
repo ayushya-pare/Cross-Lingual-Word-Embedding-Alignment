@@ -1,2 +1,5 @@
-/data/fasttext_pretrained_vectors/*
-/data/muse_bilingual_dictionary/*
+/data/fasttext_pretrained_vectors/en_top100k.vec
+/data/fasttext_pretrained_vectors/hi_top100k.vec
+/data/muse_bilingual_dictionary/en_hi.txt
+/data/muse_bilingual_dictionary/valid_pairs.txt
+
