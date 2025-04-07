@@ -141,5 +141,5 @@ for word in english_test_words:
     print(f"{word} → {', '.join(top_preds)}")
 ```
 
-This will print the top 5 closest Hindi words from the aligned embedding space.
+#### This will print the top 5 closest Hindi words from the aligned embedding space.
 ---
