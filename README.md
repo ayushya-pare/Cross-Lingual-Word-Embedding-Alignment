@@ -113,4 +113,33 @@ python unsupervised.py   --src_lang en   --tgt_lang hi   --src_emb data/vec/wiki
 ```
 This is optional and does not yield useful results for Hindi script.
 
+
+### 7. Translation Test Example (After Alignment)
+
+After completing alignment, you can test some word translations like this:
+
+```python
+from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
+
+# Example: Translate English words using aligned embeddings
+
+english_test_words = ["water", "house", "school", "computer", "love"]
+
+for word in english_test_words:
+    if word not in en_vectors:
+        print(f"{word} not found in English vocab.")
+        continue
+
+    en_vec = en_vectors[word]
+    en_vec = en_vec / np.linalg.norm(en_vec)
+
+    sim_scores = cosine_similarity(en_vec.reshape(1, -1), aligned_matrix)[0]
+    top_indices = np.argsort(sim_scores)[::-1][:5]
+    top_preds = [aligned_words[i] for i in top_indices]
+
+    print(f"{word} → {', '.join(top_preds)}")
+```
+
+This will print the top 5 closest Hindi words from the aligned embedding space.
 ---
